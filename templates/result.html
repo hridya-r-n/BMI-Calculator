@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>BMI Result</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Your BMI Result</h1>
+    <h4><b>BMI:</b>{{bmi}}</h4>
+    <h4><b>Category:</b>{{category}}</h4>
+    <br>
+    <button name="home"><a style="text-decoration: none;color:white" href="/">Go Back</a></button>
+    </div>
+</body>
+</html>
