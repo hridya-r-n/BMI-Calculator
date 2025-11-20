@@ -10,10 +10,18 @@ def calculate():
     # BMI Calculation
     bmi=weight/((height/100)**2)
     # BMi Category
-    if bmi<18.5:category='Underweight'
-    elif bmi<24.9:category='Normal Weight'
-    elif bmi<29.9:category='Overweight'
-    else:category='Obese'
-    return render_template('result.html',bmi=round(bmi,2),category=category)
+    if bmi<18.5:
+        category='Underweight'
+        message = "You are under the healthy weight range. Consider including more nutritious calories in your diet."
+    elif bmi<24.9:
+        category='Normal Weight'
+        message = "Great! Your BMI is within the healthy range. Keep maintaining a balanced diet and regular exercise."
+    elif bmi<29.9:
+        category='Overweight'
+        message = "You are slightly above the normal range. Regular exercise and mindful eating can help."
+    else:
+        category='Obese'
+        message = "Your BMI is quite high. It may be helpful to adopt a structured diet and exercise routine."
+    return render_template('result.html',bmi=round(bmi,2),category=category,message=message)
 if __name__=="__main__":
     app.run(debug=True)
