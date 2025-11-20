@@ -1,12 +1,16 @@
 body {
     font-family: Arial, sans-serif;
-    background: #6f99d1;
+    background: #f4efe6; 
     padding: 40px;
     text-align: center;
 }
+h2, h3 {
+    color: #4a4a4a; 
+}
 .container {
     background: white;
-    max-width: 400px;
+    /* max-width: 400px; */
+    width: 60%;
     margin: auto;
     padding: 25px;
     border-radius: 10px;
@@ -20,11 +24,64 @@ input {
     border: 1px solid #ccc;
 }
 button {
-    padding: 10px 20px;
-    background: #6c7ae0;
-    color: white;
-    border: none;
-    border-radius: 5px;
     font-family: Arial, sans-serif;
     cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #8b6f47;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.result-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 60%;
+    margin: auto;
+    border-left: 8px solid #8b6f47;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    font-size: 18px;
+}
+.message-box.underweight {
+    background: #f7e7d2; 
+    border-left: 6px solid #d4a373;
+}
+
+.message-box.normalweight {
+    background: #e8f1e6; 
+    border-left: 6px solid #5b7a5f;
+}
+
+.message-box.overweight {
+    background: #f8e3d9;
+    border-left: 6px solid #d4a373; 
+}
+
+.message-box.obese {
+    background: #f4d6d1; 
+    border-left: 6px solid #b85c4e; 
+}
+.bmi-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.bmi-table th {
+     background: #8b6f47;
+    color: white;
+    padding: 10px;
+}
+
+.bmi-table td {
+    padding: 10px;
+    border: 1px solid #e1d8cc;
+}
+
+.btn {
+    
 }
