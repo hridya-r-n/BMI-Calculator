@@ -7,7 +7,7 @@ def home():
 def calculate():
     height=float(request.form['height'])
     weight=float(request.form['weight'])
-    age=float(request.form['age'])
+    age=int(request.form['age'])
     # BMI Calculation
     bmi=weight/((height/100)**2)
     # BMi Category
