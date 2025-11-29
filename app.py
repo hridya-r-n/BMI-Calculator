@@ -7,6 +7,7 @@ def home():
 def calculate():
     height=float(request.form['height'])
     weight=float(request.form['weight'])
+    age=float(request.form['age'])
     # BMI Calculation
     bmi=weight/((height/100)**2)
     # BMi Category
@@ -22,6 +23,6 @@ def calculate():
     else:
         category='Obese'
         message = "Your BMI is quite high. It may be helpful to adopt a structured diet and exercise routine."
-    return render_template('result.html',bmi=round(bmi,2),category=category,message=message)
+    return render_template('result.html',bmi=round(bmi,2),category=category,message=message,age=age)
 if __name__=="__main__":
     app.run(debug=True)
